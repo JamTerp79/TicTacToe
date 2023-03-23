@@ -1,0 +1,35 @@
+/*This container contains our table and our canvas. */
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+    color: #ac200eb7;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.center-container {
+    width: 608px; /* 608px is the width of our table */
+    margin: 0 auto; /* This centers the container */
+    margin-top: 50px;   /* This adds a top margin */
+}
+
+table {
+    border-collapse: collapse; /* This removes the space between the cells */
+    border-style: hidden; /* This removes the border around the table */
+}
+
+td {
+    cursor: pointer; /* This changes the cursor to a pointer when you hover over a cell */
+    border: 4px solid rgba(49, 131, 16, 0.61); /* This adds a border around the cells */
+    padding: 0px; /* This removes the padding around the cells */
+    width: 200px; /* This sets the width of the cells */
+    height: 200px; /* This sets the height of the cells */
+    filter: contrast(3); /* This increases the contrast of the cells */
+}
+
+canvas {
+    position: absolute; /* This positions the canvas on top of the table */
+    z-index: 10; /* This makes sure the canvas is on top of the table */
+    pointer-events: none; /* This makes sure the canvas doesn't interfere with the table */
+}
